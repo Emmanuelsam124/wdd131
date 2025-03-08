@@ -124,6 +124,10 @@ nav > ul {
   min-height: 300px;
 }
 
+.res-link li {
+  margin: 1rem;
+}
+
 /* Footer */
 footer {
   background: var(--primary-color);
