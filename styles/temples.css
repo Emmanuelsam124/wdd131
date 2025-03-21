@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fig-section {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+main {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+ul {
+  background: #333;
+}
+nav li {
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+header {
+  padding: 1rem;
+  background: #9f9e9e;
+}
+
+.active {
+  color: #2078bc;
+}
+nav li:hover {
+  background: #9f9e9e;
+}
+
+nav li:hover a {
+  color: #333;
+  font-weight: bold;
+}
+
+#hamburger {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+  color: #000;
+}
+
+#hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hamburger::before {
+  content: "≡";
+}
+
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+}
+
+.navigation a:active {
+  color: white;
+  background-color: black;
+}
+
+.show-ham li {
+  display: block;
+}
+
+#hamburger.show-ham::before {
+  content: "X";
+}
+
+/* Footer */
+footer {
+  background: #1d4d72;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+  color: #fff;
+}
