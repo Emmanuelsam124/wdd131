@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Country Page">
+
+    <meta name="author" content="Emmanuel A. Samuel">
+    <title>W03 Assignment: Country Page</title>
+    <link rel="stylesheet" href="styles/country-page.css">
+    <script src="/scripts/country-page.js" defer></script>
+    <script src="/scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Nigeria
+        </h1>
+    </header>
+
+    <main>
+        <picture>
+            <picture>
+                <source srcset="images/nigeria-large-image-optimized.webp" media="(min-width: 1000px)">
+                <source srcset="images/nigeria-large-image-medium.webp" media="(min-width: 700px)">
+                <img src="images/nigeria-large-image-small.webp" alt="Nigeria weather">
+            </picture>
+
+        </picture>
+
+
+        <div class="weather-div">
+            <div class="weather-inner">
+                <div class="data-box box">
+                    <div class="box-heading">
+                        <h2>Data</h2>
+                    </div>
+                    <div class="info-container">
+                        <div class="info-item">
+                            <span class="info-label">Area:</span> 587,041 sq km
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Population:</span> 27,691,018
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Capital:</span> Antananarivo
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Languages:</span> Malagasy, French
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Currency:</span> Malagasy Ariary
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Time Zone:</span> UTC + 3
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Calling Code:</span> +261
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Internet TLD:</span> .mg
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="weather-box box">
+                    <div class="box-heading">
+                        <h2>Weather</h2>
+                        <!-- <img src="/images/weather_clouds_storm_sunny_icon_svg.svg" alt="weather icon" width="38px"> -->
+                    </div>
+                    <div class="info-container">
+                        <div class="info-item">
+                            <span class="info-label">Temperature:</span> 10<sup>o</sup>C
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Conditions:</span> Partly Cloudy
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Wind:</span> 5 km/h
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Wind Chill:</span> <span id="windChill"></span><sup>o</sup>C
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="head-foot-col padding-1">
+        <p>&copy; <span id="currentyear"></span> Emmanuel A. Samuel | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
