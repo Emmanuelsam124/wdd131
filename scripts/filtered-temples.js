@@ -77,7 +77,15 @@ const temples = [
     dedicated: "2025, May, 10",
     area: 19000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/lagos-nigeria-temple/lagos-nigeria-temple-58577-main.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/lagos-nigeria-temple/lagos-nigeria-temple-58577-icon.jpg",
+  },
+  {
+    templeName: "Apia Samoa Temple",
+    location: "RVaitele Street Pesega, Apia, Samoa",
+    dedicated: "2005, February, 19",
+    area: 18691,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/apia-samoa-temple/apia-samoa-temple-28576-thumb.jpg",
   },
   // Add more temple objects here...
 ];
