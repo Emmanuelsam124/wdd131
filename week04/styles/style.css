@@ -1,0 +1,32 @@
+main {
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+img {
+  display: block;
+  background: #000;
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Footer */
+footer {
+  background: #1d4d72;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+  color: #fff;
+}
