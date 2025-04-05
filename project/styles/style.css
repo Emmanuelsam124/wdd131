@@ -1,0 +1,129 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.color-box {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.03);
+}
+
+.color-swatch {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.info {
+  padding: 1rem;
+  background-color: white;
+  color: #555;
+  text-align: center;
+}
+
+.swatch-black {
+  background-color: #000000;
+}
+.swatch-white {
+  background-color: #ffffff;
+  color: #000;
+}
+.swatch-gray {
+  background-color: #808080;
+}
+.swatch-white-text {
+  background-color: #808080;
+  color: #000000;
+}
+
+.code {
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.typography-section {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.typography-section h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0070f3;
+}
+
+.typography-section p,
+.typography-section ul,
+.typography-section table {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.typography-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.typography-section th,
+.typography-section td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.typography-section th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.font-heading {
+  font-family: "Noto Serif", serif;
+}
+
+.font-body {
+  font-family: "Inter", sans-serif;
+}
+
+.wireframes {
+  padding: 2rem;
+}
+
+.wireframe-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.wireframe-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
