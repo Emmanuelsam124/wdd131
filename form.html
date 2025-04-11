@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form">
+
+    <meta name="author" content="Emmanuel A. Samuel">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-head">
+        <h1>Product Review</h1>
+    </div>
+
+
+    <form action="review.html" method="get">
+        <div class="req">Fields marked with asterisks (*) are required</div><br>
+        <fieldset>
+            <legend>Product Information</legend>
+            <label class="req">
+                Product Name *:
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label><br>
+
+            <label class="req">Overall Rating *:</label>
+            <label>
+                <input type="radio" name="rating" value="1" required id="rate1">
+                ☆
+            </label>
+            <label>
+                <input type="radio" name="rating" value="2" required id="rate2">
+                ☆☆
+            </label>
+            <label>
+                <input type="radio" name="rating" value="3" required id="rate3">
+                ☆☆☆
+            </label>
+            <label>
+                <input type="radio" name="rating" value="4" required id="rate4>
+                ☆☆☆☆
+            </label>
+            <label>
+                <input type=" radio" name="rating" value="5" required id="rate5">
+                ☆☆☆☆☆
+            </label><br><br>
+
+            <label class="req">
+                Date of Installation *:
+                <input type="date" name="installationDate" required id="unstallationDate">
+            </label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>User Feedback</legend>
+            <label>Useful Features (Select all that apply):</label>
+            <label>
+                <input type="checkbox" name="features" value="durability" id="durability">
+                Durability
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="easeOfUse" id="easeOfUse">
+                Ease of Use
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="performance" id="performance">
+                Performance
+            </label>
+            <label>
+                <input type="checkbox" name="features" value="design" id="design">
+                Design
+            </label><br>
+
+            <label>
+                Written Review <span>(optional)</span>:
+                <textarea name="review" id="revText"></textarea>
+            </label><br>
+
+            <label>
+                User Name <span>(optional)</span>:
+                <input type="text" name="userName" id="userName">
+            </label><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Product Review">
+    </form>
+
+    <hr>
+    <footer class="head-foot-col padding-1">
+        <p>&copy; <span id="currentyear"></span> Emmanuel A. Samuel | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
